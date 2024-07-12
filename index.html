@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GaN Модуль Усиления Мощности 100 Вт</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,101 +19,171 @@
     
     <section class="hero">
         <div class="container">
-            <img src="images/hero-image.jpg" alt="GaN Модуль Усиления" class="hero-image">
-            <h2>Эффективность и Надежность в Каждой Детали</h2>
-            <a href="#features" class="cta-button">Узнать больше</a>
+            <img src="/mnt/data/A_detailed_schematic_diagram_of_a_GaN_power_amplif.png" alt="GaN Модуль Усиления" class="hero-image animate__animated animate__zoomIn">
+            <h2 class="animate__animated animate__fadeInUp">Эффективность и Надежность в Каждой Детали</h2>
+            <a href="#features" class="cta-button animate__animated animate__pulse animate__infinite">Узнать больше</a>
         </div>
     </section>
     
     <section class="features" id="features">
         <div class="container">
-            <h2>Основные характеристики</h2>
-            <div class="features-list">
+            <h2 class="section-title">Основные характеристики</h2>
+            <div class="features-grid">
                 <div class="feature-item">
-                    <img src="images/frequency-range.jpg" alt="Широкий рабочий диапазон частот" class="feature-image">
+                    <i class="fas fa-signal"></i>
                     <h3>Широкий рабочий диапазон частот</h3>
                     <p>Охватывает частоты от 100 МГц до 3000 МГц, обеспечивая универсальность и гибкость в применении.</p>
                 </div>
                 <div class="feature-item">
-                    <img src="images/high-power.jpg" alt="Высокая выходная мощность" class="feature-image">
+                    <i class="fas fa-bolt"></i>
                     <h3>Высокая выходная мощность</h3>
                     <p>Максимальная выходная мощность 100 Вт для систем с высокими требованиями к мощности передачи.</p>
                 </div>
                 <div class="feature-item">
-                    <img src="images/efficiency.jpg" alt="Высокая эффективность" class="feature-image">
+                    <i class="fas fa-battery-full"></i>
                     <h3>Высокая эффективность</h3>
                     <p>Технология GaN обеспечивает высокую эффективность преобразования мощности, снижая тепловыделение и улучшая надежность устройства.</p>
                 </div>
                 <div class="feature-item">
-                    <img src="images/linearity.jpg" alt="Линейность и низкий уровень искажений" class="feature-image">
+                    <i class="fas fa-wave-square"></i>
                     <h3>Линейность и низкий уровень искажений</h3>
                     <p>Отличные показатели линейности и низкий уровень гармонических искажений для критически важных приложений.</p>
                 </div>
                 <div class="feature-item">
-                    <img src="images/compact-design.jpg" alt="Компактный и прочный дизайн" class="feature-image">
+                    <i class="fas fa-cubes"></i>
                     <h3>Компактный и прочный дизайн</h3>
                     <p>Компактный и прочный корпус облегчает интеграцию в различные системы и обеспечивает долговечность в экстремальных условиях.</p>
                 </div>
                 <div class="feature-item">
-                    <img src="images/protection.jpg" alt="Защита и надежность" class="feature-image">
-                    <h3>Защита и надежность</h3>
-                    <p>Встроенные схемы защиты от перенапряжения, перегрева и других угроз обеспечивают стабильную работу и защиту устройства.</p>
-                </div>
-                <div class="feature-item">
-                    <img src="images/easy-integration.jpg" alt="Простота интеграции" class="feature-image">
+                    <i class="fas fa-plug"></i>
                     <h3>Простота интеграции</h3>
                     <p>Оптимизированные интерфейсы и соединения ускоряют процесс разработки и внедрения.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Защита и надежность</h3>
+                    <p>Встроенные схемы защиты от перенапряжения, перегрева и других угроз обеспечивают стабильную работу и защиту устройства.</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <section class="application">
+    <section class="application" id="application">
         <div class="container">
-            <h2>Применение</h2>
-            <ul>
-                <li>Радиосвязные системы (включая военные и коммерческие)</li>
-                <li>Радары и системы навигации</li>
-                <li>Медицинское оборудование (например, для терапии или диагностики)</li>
-                <li>Системы обороны и безопасности</li>
-                <li>Научные исследования и экспериментальные установки</li>
-            </ul>
-            <img src="images/application.jpg" alt="Применение GaN модуля" class="application-image">
+            <h2 class="section-title">Применение</h2>
+            <div class="application-grid">
+                <div class="application-item" onclick="scrollToPanel('comm-systems')">
+                    <i class="fas fa-broadcast-tower"></i>
+                    <h3>Радиосвязные системы</h3>
+                    <p>Включая военные и коммерческие приложения.</p>
+                </div>
+                <div class="application-item" onclick="scrollToPanel('radar-navigation')">
+                    <i class="fas fa-satellite-dish"></i>
+                    <h3>Радары и системы навигации</h3>
+                    <p>Обеспечивают точное и надежное определение местоположения.</p>
+                </div>
+                <div class="application-item" onclick="scrollToPanel('medical-equipment')">
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>Медицинское оборудование</h3>
+                    <p>Применяется в терапии и диагностике.</p>
+                </div>
+                <div class="application-item" onclick="scrollToPanel('defense-security')">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Системы обороны и безопасности</h3>
+                    <p>Используется для защиты и обеспечения безопасности.</p>
+                </div>
+                <div class="application-item" onclick="scrollToPanel('scientific-research')">
+                    <i class="fas fa-flask"></i>
+                    <h3>Научные исследования</h3>
+                    <p>Подходит для различных исследовательских целей.</p>
+                </div>
+                <div class="application-item" onclick="scrollToPanel('communications')">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Коммуникационные системы</h3>
+                    <p>Используется в беспроводных и спутниковых коммуникациях.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="application-detail" id="comm-systems">
+        <div class="container">
+            <h2 class="section-title">Радиосвязные системы</h2>
+            <p>GaN модули широко используются в радиосвязных системах благодаря своей высокой мощности и эффективности. Они обеспечивают надежную передачу сигнала даже в условиях помех и дальних расстояний. В военных приложениях GaN усилители используются для связи на больших расстояниях и устойчивы к воздействию внешних факторов. В коммерческих радиосвязных системах, таких как мобильные сети, GaN модули повышают качество связи и снижают энергопотребление, что особенно важно в условиях плотной застройки и большого числа пользователей.</p>
+        </div>
+    </section>
+
+    <section class="application-detail" id="radar-navigation">
+        <div class="container">
+            <h2 class="section-title">Радары и системы навигации</h2>
+            <p>GaN усилители находят широкое применение в радарах и системах навигации благодаря своей способности работать на высоких частотах и обеспечивать высокую выходную мощность. Это позволяет радарам обнаруживать объекты на больших расстояниях с высокой точностью. В системах навигации GaN модули используются для повышения точности и надежности позиционирования, что особенно важно для авиации, морских судов и военных операций. Высокая эффективность GaN усилителей снижает тепловыделение и улучшает долговечность оборудования.</p>
+        </div>
+    </section>
+
+    <section class="application-detail" id="medical-equipment">
+        <div class="container">
+            <h2 class="section-title">Медицинское оборудование</h2>
+            <p>GaN модули находят применение в медицинском оборудовании благодаря своей высокой эффективности и надежности. Они используются в системах медицинской визуализации, таких как УЗИ и МРТ, для обеспечения высокого качества изображений. В терапевтических устройствах GaN усилители обеспечивают точное и контролируемое воздействие на ткани, что улучшает результаты лечения. Высокая эффективность GaN модулей снижает энергопотребление и тепловыделение, что важно для комфорта пациентов и долговечности оборудования.</p>
+        </div>
+    </section>
+
+    <section class="application-detail" id="defense-security">
+        <div class="container">
+            <h2 class="section-title">Системы обороны и безопасности</h2>
+            <p>GaN модули играют ключевую роль в системах обороны и безопасности благодаря своей высокой мощности и надежности. Они используются в системах радиоэлектронной борьбы для подавления вражеских сигналов и защиты собственных коммуникаций. В системах ракетного наведения GaN усилители обеспечивают точное и надежное управление полетом. Высокая эффективность GaN модулей позволяет использовать их в мобильных и автономных системах, где важны компактность и низкое энергопотребление.</p>
+        </div>
+    </section>
+
+    <section class="application-detail" id="scientific-research">
+        <div class="container">
+            <h2 class="section-title">Научные исследования</h2>
+            <p>GaN модули находят широкое применение в научных исследованиях благодаря своим уникальным характеристикам. Они используются в ускорителях частиц и системах радиационной терапии для точного и эффективного управления мощностью. В астрофизике GaN усилители применяются в радиоастрономических антеннах для обнаружения слабых сигналов из космоса. Высокая частота и мощность GaN модулей позволяют исследователям проводить эксперименты с высокой точностью и надежностью, что открывает новые возможности в различных областях науки.</p>
+        </div>
+    </section>
+
+    <section class="application-detail" id="communications">
+        <div class="container">
+            <h2 class="section-title">Коммуникационные системы</h2>
+            <p>GaN модули используются в беспроводных и спутниковых коммуникациях благодаря своей высокой эффективности и надежности. Они обеспечивают стабильную и качественную передачу данных на большие расстояния. В беспроводных сетях GaN усилители помогают уменьшить энергопотребление и улучшить качество сигнала, что особенно важно для мобильных устройств и инфраструктуры 5G. В спутниковых коммуникациях GaN модули обеспечивают мощные и надежные каналы связи, способствуя улучшению глобальной связи и доступа к интернету в отдаленных регионах.</p>
         </div>
     </section>
     
     <section class="technical-specs">
         <div class="container">
-            <h2>Технические параметры</h2>
-            <table>
-                <tr>
-                    <th>Параметр</th>
-                    <th>Значение</th>
-                </tr>
-                <tr>
-                    <td>Рабочий диапазон частот</td>
-                    <td>100-3000 МГц</td>
-                </tr>
-                <tr>
-                    <td>Выходная мощность</td>
-                    <td>100 Вт (макс)</td>
-                </tr>
-                <tr>
-                    <td>Коэффициент усиления</td>
-                    <td>45-50 дБ</td>
-                </tr>
-                <tr>
-                    <td>Эффективность</td>
-                    <td>До 60%</td>
-                </tr>
-                <tr>
-                    <td>Входное напряжение</td>
-                    <td>28 В</td>
-                </tr>
-                <tr>
-                    <td>Температурный диапазон</td>
-                    <td>-40°C до +85°C</td>
-                </tr>
+            <h2 class="section-title">Технические параметры</h2>
+            <table class="futuristic-table">
+                <thead>
+                    <tr>
+                        <th>Параметр</th>
+                        <th>Значение</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Рабочий диапазон частот</td>
+                        <td>100-3000 МГц</td>
+                    </tr>
+                    <tr>
+                        <td>Выходная мощность</td>
+                        <td>100 Вт (макс)</td>
+                    </tr>
+                    <tr>
+                        <td>Коэффициент усиления</td>
+                        <td>45-50 дБ</td>
+                    </tr>
+                    <tr>
+                        <td>Эффективность</td>
+                        <td>До 60%</td>
+                    </tr>
+                    <tr>
+                        <td>Входное напряжение</td>
+                        <td>28 В</td>
+                    </tr>
+                    <tr>
+                        <td>Температурный диапазон</td>
+                        <td>-40°C до +85°C</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </section>
@@ -121,5 +194,16 @@
         </div>
     </footer>
 
+    <button id="scrollTopBtn" onclick="scrollToTop()">Наверх</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Дополнительная информация</h2>
+            <p>Здесь можно разместить дополнительную информацию о GaN модулях усиления.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
