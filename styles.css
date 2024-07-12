@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77d42a 3px solid;
+    text-align: center;
+}
+
+header h1 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    margin-top: 20px;
+    font-size: 36px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #77d42a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.features {
+    padding: 40px 0;
+    background: #fff;
+    color: #333;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature-item {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feature-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.feature-item h3 {
+    color: #77d42a;
+    margin-bottom: 10px;
+}
+
+.application {
+    padding: 40px 0;
+    background: #eee;
+    color: #333;
+}
+
+.application h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.application ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.application ul li {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.application-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.technical-specs {
+    padding: 40px 0;
+    background: #fff;
+    color: #333;
+}
+
+.technical-specs h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.technical-specs table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.technical-specs table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background: #77d42a;
+    color: white;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
